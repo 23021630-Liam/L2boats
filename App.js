@@ -1,7 +1,34 @@
 import React from 'react';
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, StyleSheet} from 'react-native';
 import Boat from './components/boat';
 
+const styles = StyleSheet.create({
+  parent: {
+    flex:1,
+    backgroundColor: 'whitesmoke',
+    marginTop: 30,
+
+    // alignItems: 'center',
+    // textAlign: 'center',
+    // textAlignVertical: 'center',
+    // textAlignHorizontal: 'center',
+    // justifyContent: 'center',
+    // justifyContent: 'space-around',
+  },
+  child: {
+    flex:1,
+    // width: 80,
+    // height: 80,
+    textAlign: 'center',
+    backgroundColor: 'black',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontStyle: 'italic',
+    borderWidth: 3,
+    borderStyle: 'dotted',
+    borderColor: 'skyblue',
+  },
+});
 
 const AllBoats =() => {
   return (
